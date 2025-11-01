@@ -45,8 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/plmn_se13_prebuilt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13_prebuilt.bin \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
-    vendor/samsung/s5e8535-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy \
-    vendor/samsung/s5e8535-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/s5e8535-common/proprietary/vendor/firmware/OD_V2.4.2_06_30_QVGA_RICE_VRA_RGB1P.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.4.2_06_30_QVGA_RICE_VRA_RGB1P.bin \
@@ -78,8 +76,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/firmware/wifi/slsi_reg_database.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/slsi_reg_database.bin
 
 PRODUCT_PACKAGES += \
+    libGLES_mali \
+    android.hardware.graphics.allocator@4.0-impl \
+    android.hardware.graphics.mapper@4.0-impl \
     audio.sec_primary.default \
     gatekeeper.s5e8535 \
+    vulkan.mali \
     lib_SoundAlive_3DPosition_ver202 \
     libspeakercalibration \
     libteecl \
@@ -122,3 +124,11 @@ PRODUCT_PACKAGES += \
     tzdaemon \
     tzts_daemon \
     vaultkeeperd
+
+PRODUCT_PACKAGES += \
+    vendor_lib_libOpenCL_so \
+    vendor_lib_libOpenCL_so_1 \
+    vendor_lib_libOpenCL_so_1_1 \
+    vendor_lib64_libOpenCL_so \
+    vendor_lib64_libOpenCL_so_1 \
+    vendor_lib64_libOpenCL_so_1_1
