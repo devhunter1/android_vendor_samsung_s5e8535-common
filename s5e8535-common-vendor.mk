@@ -15,7 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/gnss/gps.issuetracker.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.issuetracker.cfg \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/gnss/hardware_factors.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/hardware_factors.conf \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
-    vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service-samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-samsung.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
@@ -76,8 +75,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
-    android.hardware.graphics.allocator@4.0-impl \
-    android.hardware.graphics.mapper@4.0-impl \
     audio.sec_primary.default \
     gatekeeper.s5e8535 \
     vulkan.mali \
@@ -115,7 +112,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
     cbd \
     android.hardware.drm-service.widevine \
-    android.hardware.graphics.allocator@4.0-service \
     gps \
     secaudiohalaidl \
     vendor.samsung.hardware.camera.provider-service_64 \
