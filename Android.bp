@@ -1057,33 +1057,6 @@ prebuilt_etc_xml {
 }
 
 cc_prebuilt_binary {
-    name: "cbd",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/cbd",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc",
-                "libselinux",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.drm-service.widevine",
     owner: "samsung",
     target: {

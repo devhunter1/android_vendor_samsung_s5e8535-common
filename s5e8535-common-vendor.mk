@@ -110,7 +110,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
-    cbd \
     android.hardware.drm-service.widevine \
     gps \
     secaudiohalaidl \
