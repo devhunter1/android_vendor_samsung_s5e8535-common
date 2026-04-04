@@ -70,50 +70,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.sec_primary.default",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.sec_primary.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libspeakercalibration",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.sec_primary.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libspeakercalibration",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "gatekeeper.s5e8535",
     owner: "samsung",
     strip: {
@@ -218,49 +174,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "liblog",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libspeakercalibration",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libspeakercalibration.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc",
-                "libmedia_helper",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libspeakercalibration.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc",
-                "libmedia_helper",
-                "libc++",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -415,37 +328,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsecaudiohal_aidl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/libsecaudiohal_aidl.so",
-            ],
-            shared_libs: [
-                "vendor.samsung.hardware.audio-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "liblog",
-                "libaudioutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
 }
@@ -900,31 +782,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.audio-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.biometrics.fingerprint-V1-ndk",
     owner: "samsung",
     strip: {
@@ -1012,15 +869,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "secaudiohalaidl_manifest.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.samsung.hardware.camera.provider-service.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.camera.provider-service.xml",
@@ -1093,39 +941,6 @@ sh_binary {
     src: "proprietary/vendor/bin/hw/gps.sh",
     filename: "gps.sh",
     sub_dir: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "secaudiohalaidl",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/secaudiohalaidl",
-            ],
-            shared_libs: [
-                "vendor.samsung.hardware.audio-V1-ndk",
-                "libcutils",
-                "libbinder_ndk",
-                "liblog",
-                "libutils",
-                "libbase",
-                "libaudioutils",
-                "libsecaudiohal_aidl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
     soc_specific: true,
 }
 

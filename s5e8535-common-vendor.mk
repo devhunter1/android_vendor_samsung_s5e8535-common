@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
-    vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/secaudiohalaidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secaudiohalaidl.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
@@ -43,7 +42,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/plmn_delta_ltn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_ltn.bin \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/plmn_se13_prebuilt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13_prebuilt.bin \
-    vendor/samsung/s5e8535-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/s5e8535-common/proprietary/vendor/firmware/OD_V2.4.2_06_30_QVGA_RICE_VRA_RGB1P.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.4.2_06_30_QVGA_RICE_VRA_RGB1P.bin \
     vendor/samsung/s5e8535-common/proprietary/vendor/firmware/OD_V2.5.1_06_30_VGA_RICE_VRA_RGB1P.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.5.1_06_30_VGA_RICE_VRA_RGB1P.bin \
@@ -75,16 +73,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
-    audio.sec_primary.default \
     gatekeeper.s5e8535 \
     vulkan.mali \
     lib_SoundAlive_3DPosition_ver202 \
-    libspeakercalibration \
     libteecl \
     libuuid_vendor \
     libmyspace \
     vendor.samsung.hardware.gnss-V3-ndk \
-    libsecaudiohal_aidl \
     libExtIRTA \
     lib_profiler \
     libegis_fp_normal_sensor_test \
@@ -100,19 +95,16 @@ PRODUCT_PACKAGES += \
     libsynaFpSensorTestNwd \
     libvkservice \
     libwvaidl \
-    vendor.samsung.hardware.audio-V1-ndk \
     vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
     vendor.samsung.hardware.camera.device-V1-ndk \
     vendor.samsung.hardware.camera.provider-V1-ndk \
     manifest_android.hardware.drm-service.widevine.xml \
-    secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
     android.hardware.drm-service.widevine \
     gps \
-    secaudiohalaidl \
     vendor.samsung.hardware.camera.provider-service_64 \
     vendor.samsung.hardware.gnss-service \
     tzdaemon \
