@@ -75,7 +75,10 @@ PRODUCT_PACKAGES += \
     libGLES_mali \
     gatekeeper.s5e8535 \
     vulkan.mali \
+    libSamsungPostProcessConvertor \
     lib_SoundAlive_3DPosition_ver202 \
+    lib_SoundAlive_SRC384_ver320 \
+    lib_soundaliveresampler \
     libteecl \
     libuuid_vendor \
     libmyspace \
