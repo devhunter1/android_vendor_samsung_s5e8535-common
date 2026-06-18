@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
     libtinyalsa_vendor \
     libuuid_vendor \
     libwrappergps \
-    libswdap \
     vendor.samsung.hardware.bluetooth.audio-V1-ndk \
     vendor.samsung.hardware.gnss-V3-ndk \
     libsecaudiohal_aidl \
