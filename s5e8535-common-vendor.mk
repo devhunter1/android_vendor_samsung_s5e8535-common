@@ -68,10 +68,15 @@ PRODUCT_PACKAGES += \
     audio.primary.s5e8535 \
     audio.sec_primary.default \
     gatekeeper.s5e8535 \
+    libsecaudiohal_aidl \
     vulkan.mali \
+    libExtIRTA \
     libSamsungPostProcessConvertor \
+    libVendorSemDataProps \
+    libVendorSemTelephonyProps \
     lib_SamsungRec_07010 \
     lib_SoundAlive_SRC384_ver320 \
+    lib_profiler \
     lib_soundaliveresampler \
     libaboxpcmdump \
     libalsautils_sec \
@@ -80,10 +85,20 @@ PRODUCT_PACKAGES += \
     libaudioproxy2 \
     libaudioroute_vendor \
     libdatamod \
+    libegis_fp_normal_sensor_test \
+    libengmode_client \
     libfloatingfeature \
+    libgf_in_system_lib \
     liblastaboxmsg \
+    liboemcrypto \
     libprofileparamstorage \
+    libqfp_sensortest \
     librecordalive \
+    libril_sem \
+    libsamsungcamerahal \
+    libsamsungcamerahalutils \
+    libsamsungcamerahwl_impl \
+    libsec-ril \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecaudiolevel \
@@ -91,42 +106,27 @@ PRODUCT_PACKAGES += \
     libsecril-client \
     libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
-    libspatializerparamstorage \
-    libspeakercalibration \
-    libteecl \
-    libtinyalsa_vendor \
-    libuuid_vendor \
-    libwrappergps \
-    vendor.samsung.hardware.bluetooth.audio-V1-ndk \
-    vendor.samsung.hardware.gnss-V3-ndk \
-    libsecaudiohal_aidl \
-    libExtIRTA \
-    libVendorSemDataProps \
-    libVendorSemTelephonyProps \
-    lib_profiler \
-    libegis_fp_normal_sensor_test \
-    libengmode_client \
-    libgf_in_system_lib \
-    liboemcrypto \
-    libqfp_sensortest \
-    libril_sem \
-    libsamsungcamerahal \
-    libsamsungcamerahalutils \
-    libsamsungcamerahwl_impl \
-    libsec-ril \
     libsfp_sensor \
     libsfp_teegw \
     libskeymint10device \
     libskeymint_cli \
+    libspatializerparamstorage \
+    libspeakercalibration \
     libstork_shared \
     libsynaFpSensorTestNwd \
+    libteecl \
+    libtinyalsa_vendor \
+    libuuid_vendor \
     libvkmanager_vendor \
     libvkservice \
+    libwrappergps \
     libwvaidl \
     vendor.samsung.hardware.audio-V1-ndk \
     vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
+    vendor.samsung.hardware.bluetooth.audio-V1-ndk \
     vendor.samsung.hardware.camera.device-V1-ndk \
     vendor.samsung.hardware.camera.provider-V1-ndk \
+    vendor.samsung.hardware.gnss-V3-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
@@ -153,9 +153,6 @@ PRODUCT_PACKAGES += \
     vaultkeeperd
 
 PRODUCT_PACKAGES += \
-    vendor_lib_libOpenCL_so \
-    vendor_lib_libOpenCL_so_1 \
-    vendor_lib_libOpenCL_so_1_1 \
     vendor_lib64_libOpenCL_so \
     vendor_lib64_libOpenCL_so_1 \
     vendor_lib64_libOpenCL_so_1_1
