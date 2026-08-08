@@ -71,7 +71,11 @@ PRODUCT_PACKAGES += \
     vulkan.mali \
     libSamsungPostProcessConvertor \
     lib_SamsungRec_07010 \
+    lib_SoundAlive_3DPosition_ver202 \
+    lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_SRC384_ver320 \
+    lib_SoundAlive_play_plus_ver500 \
+    lib_SoundBooster_ver1100 \
     lib_soundaliveresampler \
     libaboxpcmdump \
     libalsautils_sec \
@@ -97,6 +101,11 @@ PRODUCT_PACKAGES += \
     libtinyalsa_vendor \
     libuuid_vendor \
     libwrappergps \
+    libaudioeffectoffload \
+    libaudiosaplus_sec \
+    libmyspace \
+    libsamsungSoundbooster_plus \
+    libswspatializer \
     vendor.samsung.hardware.bluetooth.audio-V1-ndk \
     vendor.samsung.hardware.gnss-V3-ndk \
     libsecaudiohal_aidl \
