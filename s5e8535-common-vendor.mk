@@ -16,7 +16,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
-    vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/secaudiohalaidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secaudiohalaidl.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
@@ -33,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/plmn_delta_ltn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_ltn.bin \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/plmn_se13_prebuilt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13_prebuilt.bin \
-    vendor/samsung/s5e8535-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/s5e8535-common/proprietary/vendor/firmware/OD_V2.4.2_06_30_QVGA_RICE_VRA_RGB1P.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.4.2_06_30_QVGA_RICE_VRA_RGB1P.bin \
     vendor/samsung/s5e8535-common/proprietary/vendor/firmware/OD_V2.5.1_06_30_VGA_RICE_VRA_RGB1P.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.5.1_06_30_VGA_RICE_VRA_RGB1P.bin \
@@ -65,38 +63,24 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
-    audio.primary.s5e8535 \
-    audio.sec_primary.default \
     gatekeeper.s5e8535 \
     vulkan.mali \
     libSamsungPostProcessConvertor \
-    lib_SamsungRec_07010 \
     lib_SoundAlive_3DPosition_ver202 \
     lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_SRC384_ver320 \
     lib_SoundAlive_play_plus_ver500 \
     lib_SoundBooster_ver1100 \
     lib_soundaliveresampler \
-    libaboxpcmdump \
-    libalsautils_sec \
-    libaudio-ril \
-    libaudioparamupdate \
-    libaudioproxy2 \
     libaudioroute_vendor \
-    libdatamod \
     libfloatingfeature \
-    liblastaboxmsg \
     libprofileparamstorage \
-    librecordalive \
     libsecaudiocoreutils \
     libsecaudioinfo \
-    libsecaudiolevel \
     libsecnativefeature \
     libsecril-client \
-    libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
     libspatializerparamstorage \
-    libspeakercalibration \
     libteecl \
     libtinyalsa_vendor \
     libuuid_vendor \
@@ -106,9 +90,7 @@ PRODUCT_PACKAGES += \
     libmyspace \
     libsamsungSoundbooster_plus \
     libswspatializer \
-    vendor.samsung.hardware.bluetooth.audio-V1-ndk \
     vendor.samsung.hardware.gnss-V3-ndk \
-    libsecaudiohal_aidl \
     libExtIRTA \
     libVendorSemDataProps \
     libVendorSemTelephonyProps \
@@ -132,7 +114,6 @@ PRODUCT_PACKAGES += \
     libvkmanager_vendor \
     libvkservice \
     libwvaidl \
-    vendor.samsung.hardware.audio-V1-ndk \
     vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
     vendor.samsung.hardware.camera.device-V1-ndk \
     vendor.samsung.hardware.camera.provider-V1-ndk \
@@ -144,7 +125,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.messaging-V1-ndk \
     vendor.samsung.hardware.radio.sim-V1-ndk \
     manifest_android.hardware.drm-service.widevine.xml \
-    secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
@@ -154,7 +134,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service.samsung \
     gps \
     rild \
-    secaudiohalaidl \
     vendor.samsung.hardware.camera.provider-service_64 \
     vendor.samsung.hardware.gnss-service \
     tzdaemon \
