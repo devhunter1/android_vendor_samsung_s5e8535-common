@@ -67,7 +67,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_mali \
     gnss_aidl_lib \
-    gatekeeper.s5e8535 \
     vulkan.mali \
     libSamsungPostProcessConvertor \
     lib_SoundAlive_3DPosition_ver202 \
