@@ -1352,7 +1352,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsec-ril",
+    name: "libsec-ril-impl",
     owner: "samsung",
     strip: {
         none: true,
@@ -1360,7 +1360,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libsec-ril.so",
+                "proprietary/vendor/lib64/libsec-ril-impl.so",
             ],
             shared_libs: [
                 "liblog",

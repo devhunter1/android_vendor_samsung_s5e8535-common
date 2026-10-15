@@ -89,7 +89,6 @@ PRODUCT_PACKAGES += \
     libaudioeffectoffload \
     libaudiosaplus_sec \
     libmyspace \
-    libsamsungSoundbooster_plus \
     libswspatializer \
     vendor.samsung.hardware.gnss-V3-ndk \
     libExtIRTA \
@@ -101,7 +100,7 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     libqfp_sensortest \
     libril_sem \
-    libsec-ril \
+    libsec-ril-impl \
     libsfp_sensor \
     libsfp_teegw \
     libskeymint10device \
