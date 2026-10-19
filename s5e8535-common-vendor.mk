@@ -68,49 +68,49 @@ PRODUCT_PACKAGES += \
     libGLES_mali \
     gnss_aidl_lib \
     vulkan.mali \
+    libExtIRTA \
     libSamsungPostProcessConvertor \
+    libVendorSemDataProps \
+    libVendorSemTelephonyProps \
     lib_SoundAlive_3DPosition_ver202 \
     lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_SRC384_ver320 \
     lib_SoundAlive_play_plus_ver500 \
     lib_SoundBooster_ver1100 \
     lib_soundaliveresampler \
+    libegis_fp_normal_sensor_test \
+    libengmode_client \
     libfloatingfeature \
+    libgf_in_system_lib \
+    liboemcrypto \
     libprofileparamstorage \
+    libqfp_sensortest \
+    libril_sem \
+    libsec-ril-impl \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecnativefeature \
     libsecril-client \
     libsemnativecarrierfeature \
-    libspatializerparamstorage \
-    libteecl \
-    libuuid_vendor \
-    libwrappergps \
-    libaudioeffectoffload \
-    libaudiosaplus_sec \
-    libmyspace \
-    libswspatializer \
-    vendor.samsung.hardware.gnss-V3-ndk \
-    libExtIRTA \
-    libVendorSemDataProps \
-    libVendorSemTelephonyProps \
-    libegis_fp_normal_sensor_test \
-    libengmode_client \
-    libgf_in_system_lib \
-    liboemcrypto \
-    libqfp_sensortest \
-    libril_sem \
-    libsec-ril-impl \
     libsfp_sensor \
     libsfp_teegw \
     libskeymint10device \
     libskeymint_cli \
+    libspatializerparamstorage \
     libstork_shared \
     libsynaFpSensorTestNwd \
+    libteecl \
+    libuuid_vendor \
     libvkmanager_vendor \
     libvkservice \
+    libwrappergps \
     libwvaidl \
+    libaudioeffectoffload \
+    libaudiosaplus_sec \
+    libmyspace \
+    libswspatializer \
     vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
+    vendor.samsung.hardware.gnss-V3-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
@@ -133,9 +133,6 @@ PRODUCT_PACKAGES += \
     vaultkeeperd
 
 PRODUCT_PACKAGES += \
-    vendor_lib_libOpenCL_so \
-    vendor_lib_libOpenCL_so_1 \
-    vendor_lib_libOpenCL_so_1_1 \
     vendor_lib64_libOpenCL_so \
     vendor_lib64_libOpenCL_so_1 \
     vendor_lib64_libOpenCL_so_1_1
