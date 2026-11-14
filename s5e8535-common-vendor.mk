@@ -100,6 +100,7 @@ PRODUCT_PACKAGES += \
     libskeymint10device \
     libskeymint_cli \
     libspatializerparamstorage \
+    libssl-v33 \
     libstork_shared \
     libsynaFpSensorTestNwd \
     libteecl \
