@@ -1284,6 +1284,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.audio@1.0",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.audio@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.biometrics.fingerprint-V1-ndk",
     owner: "samsung",
     strip: {
@@ -1514,6 +1542,36 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.thermal@1.0",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.thermal@1.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.thermal@1.0",
+                "android.hardware.thermal@2.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
 prebuilt_etc_xml {
     name: "manifest_android.hardware.drm-service.widevine.xml",
     owner: "samsung",
@@ -1545,6 +1603,15 @@ prebuilt_etc_xml {
     name: "vendor.samsung.hardware.sehradio_manifest_2_33.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.samsung.hardware.thermal@1.0-manifest.xml",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -1708,6 +1775,46 @@ cc_prebuilt_binary {
                 "liblog",
                 "libz",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.samsung.hardware.thermal@1.0-service",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service",
+            ],
+            shared_libs: [
+                "libsecril-client",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libhardware",
+                "libcamera_metadata",
+                "android.hardware.thermal@1.0",
+                "android.hardware.thermal@2.0",
+                "vendor.samsung.hardware.thermal@1.0",
+                "android.frameworks.cameraservice.service@2.0",
+                "android.frameworks.cameraservice.service@2.1",
+                "vendor.samsung.hardware.audio@1.0",
+                "libhypervintf",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },

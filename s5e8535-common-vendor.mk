@@ -8,6 +8,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/beauty/settings.dat:$(TARGET_COPY_OUT_VENDOR)/etc/beauty/settings.dat \
+    vendor/samsung/s5e8535-common/proprietary/vendor/etc/btcon.json:$(TARGET_COPY_OUT_VENDOR)/etc/btcon.json \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
@@ -19,6 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss-service.rc \
+    vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/wifi_slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_slsi.rc \
@@ -26,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/locale/plmn_delta_zh-rCN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rCN.bin \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/locale/plmn_delta_zh-rHK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rHK.bin \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/locale/plmn_delta_zh-rTW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rTW.bin \
+    vendor/samsung/s5e8535-common/proprietary/vendor/etc/mercury.json:$(TARGET_COPY_OUT_VENDOR)/etc/mercury.json \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/mvno_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mvno_list.xml \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
@@ -109,6 +112,7 @@ PRODUCT_PACKAGES += \
     libaudiosaplus_sec \
     libmyspace \
     libswspatializer \
+    vendor.samsung.hardware.audio@1.0 \
     vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
     vendor.samsung.hardware.gnss-V3-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
@@ -118,16 +122,19 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.data-V1-ndk \
     vendor.samsung.hardware.radio.messaging-V1-ndk \
     vendor.samsung.hardware.radio.sim-V1-ndk \
+    vendor.samsung.hardware.thermal@1.0 \
     manifest_android.hardware.drm-service.widevine.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
+    vendor.samsung.hardware.thermal@1.0-manifest.xml \
     cass \
     android.hardware.drm-service.widevine \
     android.hardware.security.keymint-service.samsung \
     gps \
     rild \
     vendor.samsung.hardware.gnss-service \
+    vendor.samsung.hardware.thermal@1.0-service \
     tzdaemon \
     tzts_daemon \
     vaultkeeperd
