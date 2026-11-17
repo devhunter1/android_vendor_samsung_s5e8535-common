@@ -12,13 +12,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
-    vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
-    vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss-service.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc \
     vendor/samsung/s5e8535-common/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
@@ -82,7 +80,6 @@ PRODUCT_PACKAGES += \
     lib_SoundBooster_ver1100 \
     lib_soundaliveresampler \
     libegis_fp_normal_sensor_test \
-    libengmode_client \
     libfloatingfeature \
     libgf_in_system_lib \
     liboemcrypto \
@@ -101,12 +98,9 @@ PRODUCT_PACKAGES += \
     libskeymint_cli \
     libspatializerparamstorage \
     libssl-v33 \
-    libstork_shared \
     libsynaFpSensorTestNwd \
     libteecl \
     libuuid_vendor \
-    libvkmanager_vendor \
-    libvkservice \
     libwrappergps \
     libwvaidl \
     libaudioeffectoffload \
@@ -129,7 +123,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
     vendor.samsung.hardware.thermal@1.0-manifest.xml \
-    cass \
     android.hardware.drm-service.widevine \
     android.hardware.security.keymint-service.samsung \
     gps \
@@ -137,8 +130,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.gnss-service \
     vendor.samsung.hardware.thermal@1.0-service \
     tzdaemon \
-    tzts_daemon \
-    vaultkeeperd
+    tzts_daemon
 
 PRODUCT_PACKAGES += \
     vendor_lib64_libOpenCL_so \
