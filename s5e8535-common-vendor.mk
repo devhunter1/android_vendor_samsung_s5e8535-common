@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
     libskeymint10device \
     libskeymint_cli \
     libspatializerparamstorage \
-    libssl-v33 \
     libsynaFpSensorTestNwd \
     libteecl \
     libuuid_vendor \
